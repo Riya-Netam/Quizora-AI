@@ -1,9 +1,11 @@
 # Quizora AI: your personal AI study companion
 
+**Live demo:** https://quizora-ai-sable.vercel.app (the free server may take up to a minute to wake up on the first visit)
+
 Turn a topic, pasted notes or a PDF into quizzes and flashcards, practice them, and track progress.
 Full-stack: **React + Vite + Tailwind** frontend, **FastAPI + SQLAlchemy 2 + Alembic + PostgreSQL** backend, **Google Gemini** for generation.
 
-> **Honest status.** This project was generated in an environment with no network access, so dependencies could not be installed and **no test, build or server run has been executed yet.** The only checks done: every Python file compiles, and every relative import in the frontend resolves to a real file. Expect to fix a few small things on your first run. See [What is verified](#what-is-verified).
+> **Status:** deployed on Vercel, Render and Supabase. Backend tests: 41 passing. Frontend tests: 17 passing. Lint and production build: passing.
 
 ---
 
