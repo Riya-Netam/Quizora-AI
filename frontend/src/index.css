@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { color-scheme: light; }
+  body { @apply bg-mist-50 font-sans text-mist-900 antialiased; }
+  h1, h2, h3, h4 { @apply font-display tracking-tight text-mist-900; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-brand-600; outline-style: solid; }
+  ::selection { background: #D4CCFF; }
+}
+
+@layer components {
+  .skip-link { @apply sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-brand-700 focus:shadow-lift; }
+  .card { @apply rounded-2xl border border-mist-200 bg-white shadow-lift; }
+  .link { @apply font-medium text-brand-700 underline decoration-brand-300 underline-offset-4 hover:decoration-brand-600; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+
+@keyframes flip-in { from { transform: rotateY(90deg); opacity: .4 } to { transform: rotateY(0); opacity: 1 } }
+.flip-in { animation: flip-in .25s ease-out; }
